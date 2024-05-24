@@ -22,7 +22,7 @@ jobs:
         run: ./gradlew build
 
       - name: Upload a Build Artifact
-        uses: emineakdmnn/AndroidCICD@v1
+        uses: emineakdmnn/AndroidCICD-release@v1
         with:
           appId: ${{ secrets.FIREBASE_APP_ID }}
           serviceCredentialsFileContent: ${{ secrets.CREDENTIAL_FILE_CONTENT }}
